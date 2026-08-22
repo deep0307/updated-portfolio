@@ -3,18 +3,25 @@
  * `socials[].icon` is a Simple Icons slug (https://simpleicons.org).
  */
 export default {
-  name: 'Your Name',
-  title: 'Software Development Engineer',
-  tagline:
-    'I build clean, scalable software — from polished interfaces to robust backend systems.',
+  name: 'Deep Paresh Dodhiwala',
+  title: 'Software Engineer',
+  tagline: 'Full-stack software engineer building reliable microservices, modern UIs, and robust automated testing systems.',
   about:
-    "Hi, I'm a software engineer who loves turning ideas into reliable, well-architected products. This is a placeholder — replace it with your own story, highlights, and what you're passionate about.",
-  location: 'City, Country',
-  email: 'you@example.com',
-  resumeUrl: '#',
+    'Software Engineer at Trimble Inc. designing and architecting high-impact enterprise scheduling products with modern full-stack systems and automated testing pipelines. I\'m also a USC graduate with a Master\'s in Computer Science. Above all, I genuinely enjoy learning and working with new technologies!',
+  location: 'New York',
+  email: 'deep.pd03007@gmail.com',
+  resumeUrl: '/Deep_Dodhiwala_Resume.pdf',
   socials: [
-    { label: 'GitHub', icon: 'github', url: 'https://github.com/yourusername' },
-    { label: 'LinkedIn', icon: 'linkedin', url: 'https://linkedin.com/in/yourusername' },
-    { label: 'X', icon: 'x', url: 'https://x.com/yourusername' },
+    {
+      label: 'GitHub',
+      url: 'https://github.com/deep0307',
+      icon: 'github',
+    },
+    {
+      label: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/deep-dodhiwala/',
+      icon: 'linkedin',
+    },
+
   ],
 };

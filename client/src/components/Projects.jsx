@@ -35,6 +35,11 @@ export default function Projects({ items }) {
                     Live site
                   </a>
                 )}
+                {project.paper && (
+                  <a className="btn btn--mini" href={project.paper} target="_blank" rel="noreferrer">
+                    Paper
+                  </a>
+                )}
                 {project.repo && (
                   <a className="btn btn--mini btn--mini-ghost" href={project.repo} target="_blank" rel="noreferrer">
                     Source

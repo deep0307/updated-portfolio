@@ -1,7 +1,12 @@
+import { useState } from 'react';
 import Reveal from './Reveal.jsx';
+import ResumeModal from './ResumeModal.jsx';
 import { iconUrl } from '../lib/icons.js';
 
 export default function Hero({ profile }) {
+  const [resumeOpen, setResumeOpen] = useState(false);
+  const resumeUrl = profile?.resumeUrl || '/Deep_Dodhiwala_Resume.pdf';
+
   return (
     <section id="top" className="hero">
       <div className="hero__inner">
@@ -24,9 +29,9 @@ export default function Hero({ profile }) {
             <a className="btn btn--primary" href="#projects">
               View my work
             </a>
-            <a className="btn btn--ghost" href={profile?.resumeUrl || '#'}>
-              Download CV
-            </a>
+            <button type="button" className="btn btn--ghost" onClick={() => setResumeOpen(true)}>
+              View Resume
+            </button>
           </div>
           <div className="hero__meta">
             <span>{profile?.location}</span>
@@ -50,6 +55,7 @@ export default function Hero({ profile }) {
           </div>
         </Reveal>
       </div>
+      {resumeOpen && <ResumeModal src={resumeUrl} onClose={() => setResumeOpen(false)} />}
     </section>
   );
 }

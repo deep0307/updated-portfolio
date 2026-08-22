@@ -13,7 +13,7 @@ export default [
     items: [
       { name: 'Python', icon: 'python' },
       { name: 'C#', icon: 'csharp' },
-      { name: 'Java', icon: 'java' },
+      { name: 'Java', icon: 'openjdk' },
       { name: 'TypeScript', icon: 'typescript' },
       { name: 'C', icon: 'c' },
       { name: 'C++', icon: 'cplusplus' },

@@ -4,19 +4,18 @@
 export default [
   {
     id: 'edu-1',
-    degree: 'B.S. in Computer Science',
-    school: 'University Name',
-    location: 'City, Country',
-    period: '2016 — 2020',
-    details:
-      'Relevant coursework, honors, or a notable academic achievement. Keep it to one or two sentences.',
+    school: 'University of Southern California (USC)',
+    degree: 'Master of Science in Computer Science',
+    location: 'Los Angeles, CA',
+    period: 'Aug. 2022 — May 2024',
+    details: 'CGPA: 3.75 / 4.0. Coursework: Analysis of Algorithms, Operating Systems, Machine Learning, Database Systems.',
   },
   {
     id: 'edu-2',
-    degree: 'Certification / Bootcamp',
-    school: 'Organization Name',
-    location: 'Remote',
-    period: '2021',
-    details: 'A brief note on what this certification covered or why it matters.',
+    school: 'Sardar Patel Institute of Technology',
+    degree: 'Bachelor of Technology in Information Technology',
+    location: 'Mumbai, India',
+    period: 'Aug. 2018 — May 2022',
+    details: 'CGPA: 9.5 / 10.0.',
   },
 ];

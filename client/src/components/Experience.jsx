@@ -1,5 +1,6 @@
 import Section from './Section.jsx';
 import Reveal from './Reveal.jsx';
+import { iconUrl } from '../lib/icons.js';
 
 export default function Experience({ items }) {
   return (
@@ -19,7 +20,23 @@ export default function Experience({ items }) {
                     {item.company} <span className="muted">· {item.location}</span>
                   </p>
                 </div>
-                <span className="chip">{item.period}</span>
+                <div className="exp-card__right">
+                  {item.tech?.length > 0 && (
+                    <div className="exp-card__tech">
+                      {item.tech.map((slug) => (
+                        <img
+                          key={slug}
+                          className="tech-icon"
+                          src={iconUrl(slug)}
+                          alt={slug}
+                          title={slug}
+                          loading="lazy"
+                        />
+                      ))}
+                    </div>
+                  )}
+                  <span className="chip">{item.period}</span>
+                </div>
               </div>
               <p className="exp-card__summary">{item.summary}</p>
               {item.highlights?.length > 0 && (
